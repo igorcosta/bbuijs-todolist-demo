@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:rim="http://www.blackberry.com/ns/widgets"
+        version="1.0.0"
+        id="com.apps.suaApp">
+
+  <name>To-do-List</name>
+  <content src="index.html" />
+  <author rim:copyright="2013"
+            href="http://www.igorcosta.com/"
+            email = "igorcosta@gmail.com">Igor Costa</author>
+  
+
+  <description>Simples App com lista de tarefas, crie listas e tarefas especificas</description>
+    
+  <license href="http://www.apache.org/licenses/LICENSE-2.0">
+        Licença caso sua App se aplique
+  </license>
+
+  <access uri="*" subdomains="true" />
+  <access subdomains="true" uri="file:///store/home" />
+  <access subdomains="true" uri="file:///SDCard" />
+  <access subdomains="true" uri="local:///" />
+
+  <feature id="blackberry.app">
+        <param name="orientation" value="portrait" />
+  </feature>
+  <feature id="blackberry.app.event"/>
+  <feature id="blackberry.system.event" />
+  <feature id="blackberry.connection" />
+  <feature id="blackberry.ui.toast" />
+  <feature id="blackberry.ui.dialog" />
+  <feature id="blackberry.io" />
+  <feature id="blackberry.io.file" required="true" version="1.0.0.0" />
+  <feature id="blackberry.utils"   required="true" version="1.0.0.0" />
+  <feature id="blackberry.io.dir"  required="true" version="1.0.0.0" />
+
+    <rim:splash src="splash-portrait-768x1280.png" />
+    <rim:splash src="splash-landscape-1280x768.png" />
+
+
+    <!-- para mais permissões visite 
+    http://developer.blackberry.com/html5/documentation/rim_permit_element.html
+	-->
+    <rim:permissions>
+        <rim:permit>access_location_services</rim:permit>
+        <rim:permit>use_camera</rim:permit>
+        <rim:permit>access_shared</rim:permit>
+    </rim:permissions>
+
+
+ </widget>
